@@ -12,7 +12,7 @@ function Login() {
 			>
 				<Image
 					className="object-cover rounded-full"
-					src="/demon.png"
+					src="/me.jpg"
 					height={150}
 					width={150}
 					alt=""
@@ -25,7 +25,7 @@ function Login() {
 				</button>
 			</div>
 
-			<div className="bg-blend-overlay w-full h-screen">
+			<div className="w-full h-screen">
 				<Image
 					src="/bg.jpg"
 					alt=""
