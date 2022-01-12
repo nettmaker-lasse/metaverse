@@ -26,7 +26,7 @@ function Messages() {
 
 	return (
 		<div className="pb-56">
-			<div className="my-5">
+			<div className="my-10">
 				<ByMoralis
 					variant="dark"
 					style={{ marginLeft: "auto", marginRight: "auto" }}
@@ -45,7 +45,7 @@ function Messages() {
 				<SendMessage endOfMessagesRef={endOfMessagesRef} />
 			</div>
 
-			<div ref={endOfMessagesRef} className="text-center text-gray-200 mt-5">
+			<div ref={endOfMessagesRef} className="text-center text-black mt-5">
 				<p>You`re up to date {user.getUsername()}! 🎉</p>
 			</div>
 		</div>

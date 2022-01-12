@@ -28,13 +28,13 @@ function Message({ message }) {
 
 			{/* Timestamp */}
 			<TimeAgo 
-			className={`text-[10px] italic text-white ${isUserMessage && 'order-first pr-1'}`}
+			className={`text-[10px] italic text-black ${isUserMessage && 'order-first pr-1'}`}
 			datetime={message.createdAt}
 			/>
 
 			<p
 				className={`absolute -bottom-5 text-xs ${
-					isUserMessage ? "text-pink-300" : "text-blue-400"
+					isUserMessage ? "text-pink-600" : "text-blue-400"
 				}`}
 			>
 				{message.get("username")}
