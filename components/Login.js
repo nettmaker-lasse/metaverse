@@ -17,21 +17,21 @@ function Login() {
 					width={150}
 					alt=""
 				/>
-				<button
-					onClick={authenticate}
-					className="bg-white border-4 border-fuchsia-200 shadow-4xl rounded-lg py-3 px-6 font-bold text-black text-sm"
-				>
-					Connect with a wallet
-				</button>
+				<div className="relative group">
+					<div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-20 group-hover:opacity-100 transition duration-500 group-hover:duration-500"></div>
+					<div className="overflow-hidden w-full h-full relative">
+						<button
+							onClick={authenticate}
+							className="cursor-pointer relative p-4 rounded-lg inline-flex flex-row items-center justify-center text-black bg-white text-lg font-bold space-x-2"
+						>
+							Connect with a wallet
+						</button>
+					</div>
+				</div>
 			</div>
 
-			<div className="w-full h-screen">
-				<Image
-					src="/bg.jpg"
-					alt=""
-					layout="fill"
-					objectFit="cover"
-				/>
+			<div className="backdrop-blur-sm w-full h-screen">
+				<Image src="/bg.jpg" alt="" layout="fill" objectFit="cover" />
 			</div>
 		</div>
 	);
