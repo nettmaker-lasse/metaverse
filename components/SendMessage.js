@@ -40,7 +40,7 @@ function SendMessage({endOfMessagesRef}) {
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}
 				type="text"
-				className="flex-grow outline-none bg-transparent text-black placeholder-gray-500 pr-5"
+				className="flex-grow outline-none bg-transparent text-black placeholder-gray-700 pr-5 placeholder-small"
 				placeholder={`Enter a Message ${user.getUsername()}...`}
 			/>
 			<button onClick={sendMessage} className="font-bold text-black">

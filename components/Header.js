@@ -25,10 +25,10 @@ function Header() {
 					</div>
 
 					{/* Welcome Message */}
-					<h1 className="text-3xl">Welcome to the metaverse</h1>
+					<h1 className="text-xl mb-4">Welcome to the metaverse</h1>
 
 					{/* User name  */}
-					<h2 className="text-5xl font-bold truncate">{user.getUsername()}</h2>
+					<h2 className="text-4xl font-bold uppercase truncate">{user.getUsername()}</h2>
 					
 					{/* Change username component  */}
 					<ChangeUserName />
