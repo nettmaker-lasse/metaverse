@@ -17,10 +17,10 @@ function Message({ message }) {
 				<Avatar username={message.get("username")} />
 			</div>
 			<div
-				className={`flex text-white space-x-4 p-3 rounded-lg ${
+				className={`flex space-x-4 p-3 rounded-lg ${
 					isUserMessage
-						? "rounded-br-none bg-pink-600"
-						: "rounded-bl-none bg-blue-400"
+						? "rounded-br-none text-black bg-white"
+						: "rounded-bl-none text-white bg-blue-700"
 				}`}
 			>
 				<p>{message.get("message")}</p>
@@ -28,13 +28,13 @@ function Message({ message }) {
 
 			{/* Timestamp */}
 			<TimeAgo 
-			className={`text-[10px] italic text-black ${isUserMessage && 'order-first pr-1'}`}
+			className={`mb-4 text-[10px] italic text-black ${isUserMessage && 'order-first pr-1'}`}
 			datetime={message.createdAt}
 			/>
 
 			<p
 				className={`absolute -bottom-5 text-xs ${
-					isUserMessage ? "text-pink-600" : "text-blue-400"
+					isUserMessage ? "text-white" : "text-white"
 				}`}
 			>
 				{message.get("username")}

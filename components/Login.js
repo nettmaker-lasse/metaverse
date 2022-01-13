@@ -32,6 +32,13 @@ function Login() {
 
 			<div className="backdrop-blur-sm w-full h-screen bg-gradient-to-b from-white to-blue-300">
 				{/* <Image src="/new-bg.png" alt="" layout="fill" objectFit="cover" /> */}
+				<div className="background">
+					<div className="cube"></div>
+					<div className="cube"></div>
+					<div className="cube"></div>
+					<div className="cube"></div>
+					<div className="cube"></div>
+				</div>
 			</div>
 		</div>
 	);

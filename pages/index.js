@@ -11,7 +11,7 @@ export default function Home() {
 	if (!isAuthenticated) return <Login />;
 
 	return (
-		<div className="h-screen overflow-y-scroll bg-gradient-to-b from-white to-blue-300 overflow-hidden">
+		<div className="h-screen overflow-y-scroll bg-gradient-to-b from-[#FC415A] to-[#591BC5] overflow-hidden">
 			{/* <Image src="/new-bg.png" alt="" layout="fill" objectFit="cover" /> */}
 			<Head>
 				<title>Metaverse</title>
