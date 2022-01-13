@@ -35,7 +35,7 @@ function SendMessage({endOfMessagesRef}) {
 	};
 
 	return (
-		<form className="flex w-11/12 fixed bottom-10 bg-white opacity-80 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-blue-600">
+		<form className="flex w-11/12 fixed bottom-10 bg-white px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-blue-600">
 			<input
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}

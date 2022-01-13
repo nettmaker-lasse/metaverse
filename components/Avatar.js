@@ -1,15 +1,13 @@
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
 
-function Avatar(username, logoutOnPress) {
+function Avatar({username, logoutOnPress}) {
 	const { user, logout } = useMoralis();
 
 	return (
 		<Image
-		className="rounded-full bg-black cursor-pointer hover:opacity-75"
-			src={`https://avatars.dicebear.com/api/pixel-art/${
-				username || user.get("username")
-			}.svg`}
+		className="rounded-full bg-blue-300 cursor-pointer hover:opacity-75"
+			src={`https://avatars.dicebear.com/api/pixel-art/${username || user.get("username")}.svg`}
 			layout="fill"
 			alt=""
 			onClick={() => logoutOnPress && logout()}

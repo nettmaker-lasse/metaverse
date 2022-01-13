@@ -7,20 +7,20 @@ function Header() {
 	const { user } = useMoralis();
 
 	return (
-		<div className="text-black sticky top-0 p-5 z-50 bg-blue-200 shadow-sm border-b-4 border-blue-600">
+		<div className="text-black sticky top-0 p-5 z-50 bg-white shadow-sm border-b-4 border-blue-600">
 			<div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
 				<div className="relative h-24 w-24 mx-auto hidden lg:inline-grid lg:top">
-					<Image 
+					{/* <Image 
 					src="/me.jpg"
 					layout="fill"
 					className="rounded-full object-cover"
 					alt=""
-					/>
+					/> */}
 				</div>
 
 				<div className="col-span-4 text-left lg:text-center">
 					{/* Avatar */}
-					<div className="relative h-48 w-48 lg:mx-auto border-blue-600 border-8 rounded-full">
+					<div className="relative h-32 w-32 mb-12 lg:mx-auto border-blue-200 border-8 rounded-full">
 						<Avatar logoutOnPress />
 					</div>
 
